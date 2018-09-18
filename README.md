@@ -6,6 +6,8 @@ Development server
 
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
+![screenshot from 2018-09-17 23-19-23](https://user-images.githubusercontent.com/16551638/45662521-477ae380-bad0-11e8-8247-e5f5ed9bcd47.png)
+
 Descripcion:
 la Siguiente aplicacion es una app que sirve para poder crear un mapa con las ubicaciones preferidas por el usuario con el objetivo de tener una lista de los sitios de su preferencia
 
