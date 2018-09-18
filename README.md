@@ -5,8 +5,10 @@ This project was generated with Angular CLI version 6.1.5.
 Development server
 
 Git clone https://github.com/claudiomelendres/Mapas.git
->npm install
->ng serve
+
+npm install
+
+ng serve
 
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
