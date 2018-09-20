@@ -25,6 +25,10 @@ ng serve
 
 utilice http://localhost:4200/  para abrir en el explorador 
 
+Versiones:
+![screenshot from 2018-09-19 21-14-13](https://user-images.githubusercontent.com/16551638/45790072-1249cf00-bc51-11e8-8d81-8d37a07d14a0.png)
+
+
 ![screenshot from 2018-09-17 23-19-23](https://user-images.githubusercontent.com/16551638/45662521-477ae380-bad0-11e8-8247-e5f5ed9bcd47.png)
 
 Descripcion: la Siguiente aplicacion es una app que sirve para poder crear un mapa con las ubicaciones preferidas por el usuario con el objetivo de tener una lista de los sitios de su preferencia
