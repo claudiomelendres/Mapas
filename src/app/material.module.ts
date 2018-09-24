@@ -29,7 +29,7 @@ import {MatInputModule} from '@angular/material/input';
     MatSnackBarModule,
     MatDialogModule,
     MatInputModule
-  ], // esto se debe exportar para que funcione
+  ],
   declarations: []
 })
 export class MaterialModule { }

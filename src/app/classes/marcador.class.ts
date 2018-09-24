@@ -1,13 +1,13 @@
-export class Marcador {
-    public lat: number;
-    public lng: number;
+export class MarcadorDeMapa {
+    public latitud: number;
+    public longitud: number;
 
     public titulo = 'Sin Titulo';
-    public desc = 'Sin Descripcion';
+    public descripcion = 'Sin Descripcion';
 
 
-    constructor( lat: number, lng: number) {
-        this.lat = lat;
-        this.lng = lng;
+    constructor( latitud: number, longitud: number) {
+        this.latitud = latitud;
+        this.longitud = longitud;
     }
 }

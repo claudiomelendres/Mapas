@@ -1,15 +1,15 @@
-<mat-card class="example-card">
+<mat-card class="example-card" class="mapaPrincipal">
 
-    <mat-card-title>Mapa Cochabamba</mat-card-title>
+    <mat-card-title> Mapa Cochabamba</mat-card-title>
 
 
     <mat-card-content>
-        <agm-map (mapClick)="agregarMarcador( $event )" [latitude]="lat" [longitude]="lng" [zoom]="15">
-            <agm-marker *ngFor="let marcador of marcadores; let i = index" [latitude]="marcador.lat" [longitude]="marcador.lng">
+        <agm-map (mapClick)="agregarMarcador( $event )" [latitude]="latitud" [longitude]="longitud" [zoom]="15" class="mapaPrincipal_imagen">
+            <agm-marker *ngFor="let marcador of marcadores; let i = index" [latitude]="marcador.latitud" [longitude]="marcador.longitud">
                 <agm-info-window>
                     <strong>{{ marcador.titulo }}</strong>
                     <p>
-                        {{ marcador.desc }}
+                        {{ marcador.descripcion }}
                     </p>
 
                     <div>

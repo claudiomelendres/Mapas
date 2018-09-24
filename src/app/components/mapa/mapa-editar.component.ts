@@ -1,41 +1,32 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
-
+import { Component, Inject } from '@angular/core';
+import {MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-mapa-editar',
-  templateUrl: './mapa-editar.component.html',
-  styleUrls: ['./mapa-editar.component.css']
+  templateUrl: './mapa-editar.component.html'
 })
-export class MapaEditarComponent implements OnInit {
+export class MapaEditarComponent {
 
-  forma: FormGroup;
+  formGroup: FormGroup;
 
   constructor(
-    public fb: FormBuilder,
-    public dialogRef: MatDialogRef<MapaEditarComponent>,
+    public formBuilder: FormBuilder,
+    public dialogReference: MatDialogRef<MapaEditarComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) {
       console.log( data );
-      this.forma = fb.group({
+      this.formGroup = formBuilder.group({
         'titulo': data.titulo,
-        'desc': data.desc
+        'descripcion': data.descripcion
       });
     }
 
-  ngOnInit() {
-  }
-
   guardarCambios() {
-    this.dialogRef.close(this.forma.value);
-  }
-
-  cerrarDialogo() {
-    console.log('Cerrar');
+    this.dialogReference.close(this.formGroup.value);
   }
 
   onNoClick(): void {
-    this.dialogRef.close();
+    this.dialogReference.close();
   }
 
 
